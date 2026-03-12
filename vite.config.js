@@ -8,7 +8,7 @@ export default defineConfig({
     port: 62033,
     host: true
   },
-  base: '/',
+  base: '/Sandbox-Repository/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
