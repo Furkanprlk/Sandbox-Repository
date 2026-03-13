@@ -1,26 +1,25 @@
-// Dark mode map style with 3D buildings using Maptiler
+// Dark mode map style using OpenStreetMap standard tiles
 export const mapStyle = {
   version: 8,
-  name: 'Dark 3D',
+  name: 'OSM Standard',
   sources: {
-    'osm-raster': {
+    'osm-tiles': {
       type: 'raster',
       tiles: [
-        'https://cartodb-basemaps-a.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
-        'https://cartodb-basemaps-b.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
-        'https://cartodb-basemaps-c.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
-        'https://cartodb-basemaps-d.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png'
+        'https://a.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png'
       ],
       tileSize: 256,
       maxzoom: 19,
-      attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors &copy; <a href="https://carto.com">CARTO</a>'
+      attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
     }
   },
   layers: [
     {
-      id: 'dark-raster',
+      id: 'osm-raster',
       type: 'raster',
-      source: 'osm-raster',
+      source: 'osm-tiles',
       minzoom: 0,
       maxzoom: 19
     }

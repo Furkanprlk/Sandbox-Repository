@@ -337,3 +337,14 @@ html {
   background: var(--accent-primary);
   color: white;
 }
+
+/* MapLibre GL Styles */
+.maplibregl-map {
+  background: var(--bg-primary) !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.maplibregl-canvas {
+  outline: none;
+}
