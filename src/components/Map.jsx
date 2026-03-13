@@ -24,8 +24,10 @@ function Map({ onCoordinateClick }) {
       map.current = new maplibregl.Map({
         container: mapContainer.current,
         style: mapStyle,
-        center: [0, 20],
-        zoom: 2,
+        center: [28.9784, 41.0082], // Istanbul - to see 3D buildings
+        zoom: 14,
+        pitch: 45,
+        bearing: 0,
         attributionControl: true,
       });
 
